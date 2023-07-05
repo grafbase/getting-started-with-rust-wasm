@@ -6,7 +6,7 @@ This repository contains code relating to an upcoming blog post
 
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - Install [`cargo-make`](https://github.com/sagiegurari/cargo-make) - `cargo install cargo-make`
-- [Install NodeJS](https://nodejs.dev/en/)
+- [Install Node.js](https://nodejs.dev/en/)
 
 # Usage
 
