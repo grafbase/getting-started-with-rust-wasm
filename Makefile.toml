@@ -31,7 +31,7 @@ args = [
     "--target",
     "nodejs",
     "--out-dir",
-    "build/",
+    "pkg/",
 ]
 
 [tasks.build]
