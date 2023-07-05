@@ -1,0 +1,40 @@
+[config]
+default_to_workspace = false
+skip_core_tasks = true
+skip_git_env_info = true
+skip_rust_env_info = true
+skip_crate_env_info = true
+
+[tasks.install-wasm-bindgen]
+description = "Install the Wasm Bindgen CLI"
+install_crate = { crate_name = "wasm-bindgen-cli", binary = "wasm-bindgen", test_arg = "--version" }
+
+[tasks.add-wasm32-target]
+command = "rustup"
+description = "Adds the wasm32-unknown-unknown to rustup"
+args = ["target", "add", "wasm32-unknown-unknown"]
+
+[tasks.build-wasm]
+command = "cargo"
+description = "Builds a wasm32-unknown-unknown binary in release mode"
+args = ["build", "--release", "--target", "wasm32-unknown-unknown"]
+
+[tasks.wasm-bindgen]
+command = "wasm-bindgen"
+description = "Generates bindings for a previously built wasm32-unknown-unknown binary"
+args = [
+    "target/wasm32-unknown-unknown/release/getting_started_with_rust_wasm.wasm",
+    "--target",
+    "nodejs",
+    "--out-dir",
+    "build/",
+]
+
+[tasks.build]
+description = "Runs all build steps"
+dependencies = [
+    "add-wasm32-target",
+    "install-wasm-bindgen",
+    "build-wasm",
+    "wasm-bindgen",
+]
