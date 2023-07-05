@@ -15,5 +15,7 @@ console_error_panic_hook = "0.1"
 wasm-bindgen-futures = "0.4"
 
 [profile.release]
-opt-level = "s"
-strip = "symbols"
+opt-level = "z"
+strip = true
+lto = true
+codegen-units = 1
