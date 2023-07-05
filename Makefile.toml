@@ -38,3 +38,9 @@ dependencies = [
     "build-wasm",
     "wasm-bindgen",
 ]
+
+[tasks.run-node]
+description = "Runs index.mjs"
+script = """
+node src/index.mjs
+"""
