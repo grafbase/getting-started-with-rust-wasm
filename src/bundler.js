@@ -1,6 +1,5 @@
-const wasm = import('../pkg');
+import { greeter } from '../pkg';
 
-wasm
-  .then(({ greeter }) => greeter('Grafbase'))
-  .then((greeting) => (document.getElementById('greeter').innerText = greeting))
-  .catch(console.error);
+let greeting = greeter('Grafbase');
+
+document.getElementById('greeter').innerText = greeting;
