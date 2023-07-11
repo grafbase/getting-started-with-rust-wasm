@@ -16,7 +16,7 @@ This repository contains code relating to an upcoming blog post
 ### With `wasm-pack`
 
 - `wasm-pack build --target nodejs` - Builds and generates bindings for `src/lib.rs`
-- `node public/node/index.mjs` - Runs `index.mjs`
+- `node src/node/index.mjs` - Runs `index.mjs`
 
 ### With `cargo-make`
 

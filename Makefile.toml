@@ -44,9 +44,9 @@ dependencies = [
 ]
 
 [tasks.run-node]
-description = "Runs public/node/index.mjs"
+description = "Runs src/node/index.mjs"
 script = """
-node public/node/index.mjs
+node src/node/index.mjs
 """
 
 
@@ -72,7 +72,7 @@ dependencies = [
 ]
 
 [tasks.run-bundler]
-description = "Runs public/bundler/index.js"
+description = "Runs src/bundler/index.js"
 script = """
 npm run build
 npm run serve
