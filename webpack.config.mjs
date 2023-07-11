@@ -22,5 +22,5 @@ export default {
     }),
   ],
   experiments: { asyncWebAssembly: true },
-  mode: 'development',
+  mode: 'production',
 };
