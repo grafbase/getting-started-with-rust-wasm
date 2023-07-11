@@ -3,5 +3,5 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen]
 pub fn greeter(name: String) -> Result<String, JsValue> {
     console_error_panic_hook::set_once();
-    Ok(format!("hello {}!", name))
+    Ok(format!("Hello {}!", name))
 }
