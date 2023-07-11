@@ -1,4 +1,4 @@
-const wasm = import("../../pkg");
+const wasm = import("../pkg");
 
 wasm
   .then(({ greeter }) => greeter("Grafbase"))

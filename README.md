@@ -16,11 +16,11 @@ This repository contains code relating to an upcoming blog post
 ### With `wasm-pack`
 
 - `wasm-pack build --target nodejs` - Builds and generates bindings for `src/lib.rs`
-- `node src/node/index.mjs` - Runs `index.mjs`
+- `node src/node.mjs` - Runs `node.mjs`
 
 ### With `cargo-make`
 
-- `cargo make run-node` - Runs `index.mjs`
+- `cargo make run-node` - Runs `node.mjs`
 
 ## Webpack
 
@@ -30,4 +30,4 @@ This repository contains code relating to an upcoming blog post
 
 ### With `cargo-make`
 
-- `cargo make run-bundler` - Runs `bundler.mjs`
+- `cargo make run-bundler` - Runs `bundler.js`

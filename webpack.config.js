@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const WasmPackPlugin = require("@wasm-tool/wasm-pack-plugin");
 
 module.exports = {
-  entry: "./src/bundler/index.js",
+  entry: "./src/bundler.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
