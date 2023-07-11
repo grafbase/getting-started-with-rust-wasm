@@ -23,4 +23,7 @@ export default {
   ],
   experiments: { asyncWebAssembly: true },
   mode: 'production',
+  devServer: {
+    allowedHosts: 'all',
+  },
 };
