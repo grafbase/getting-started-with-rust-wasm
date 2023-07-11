@@ -20,5 +20,14 @@ This repository contains code relating to an upcoming blog post
 
 ### With `cargo-make`
 
-- `cargo make build-node` - Builds and generates bindings for `src/lib.rs`
 - `cargo make run-node` - Runs `index.mjs`
+
+## Webpack
+
+### With `wasm-pack`
+
+- TBD
+
+### With `cargo-make`
+
+- `cargo make run-bundler` - Runs `bundler.mjs`

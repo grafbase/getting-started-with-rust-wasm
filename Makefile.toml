@@ -48,6 +48,7 @@ description = "Runs src/node/index.mjs"
 script = """
 node src/node/index.mjs
 """
+dependencies = ["build-node"]
 
 
 [tasks.wasm-bindgen-bundler]
@@ -77,3 +78,4 @@ script = """
 npm run build
 npm run serve
 """
+dependencies = ["build-bundler"]
