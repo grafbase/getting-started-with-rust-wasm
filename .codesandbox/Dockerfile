@@ -12,7 +12,7 @@ RUN rustup component add rust-analyzer rustfmt rust-src clippy && \
     cargo binstall -y wasm-pack
 
 WORKDIR /usr/bin/
-RUN sudo apt install node
+RUN apt install nodejs
 
 RUN npm install -g yarn
 
