@@ -14,7 +14,7 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      templateContent: "<div id='greeter'></div>",
+      templateContent: "<div id='root'></div>",
       inject: 'body',
     }),
     new WasmPackPlugin({
