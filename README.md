@@ -46,6 +46,7 @@ This repository contains code relating to an upcoming blog post
 ### With `cargo-make`
 
 - `cargo make run-bundler` - Runs `src/bundler.js`
+- Open http://localhost:8080
 
 ## Deno
 
