@@ -11,12 +11,14 @@ This repository contains code relating to an upcoming blog post
 
 # Usage
 
-## With `wasm-pack`
+## Node.js
+
+### With `wasm-pack`
 
 - `wasm-pack build --target nodejs` - Builds and generates bindings for `src/lib.rs`
-- `node src/index.mjs` - Runs `index.mjs`
+- `node public/node/index.mjs` - Runs `index.mjs`
 
-## With `cargo-make`
+### With `cargo-make`
 
-- `cargo make build` - Builds and generates bindings for `src/lib.rs`
+- `cargo make build-node` - Builds and generates bindings for `src/lib.rs`
 - `cargo make run-node` - Runs `index.mjs`

@@ -22,10 +22,10 @@ command = "cargo"
 description = "Builds a wasm32-unknown-unknown binary in release mode"
 args = ["build", "--release", "--target", "wasm32-unknown-unknown"]
 
-[tasks.wasm-bindgen]
+[tasks.wasm-bindgen-node]
 private = true
 command = "wasm-bindgen"
-description = "Generates bindings for a previously built wasm32-unknown-unknown binary"
+description = "Generates bindings for a previously built wasm32-unknown-unknown binary for the web target"
 args = [
     "target/wasm32-unknown-unknown/release/getting_started_with_rust_wasm.wasm",
     "--target",
@@ -34,17 +34,46 @@ args = [
     "pkg/",
 ]
 
-[tasks.build]
-description = "Runs all build steps"
+[tasks.build-node]
+description = "Runs all build steps for nodejs"
 dependencies = [
     "add-wasm32-target",
     "install-wasm-bindgen",
     "build-wasm",
-    "wasm-bindgen",
+    "wasm-bindgen-node",
 ]
 
 [tasks.run-node]
-description = "Runs index.mjs"
+description = "Runs public/node/index.mjs"
 script = """
-node src/index.mjs
+node public/node/index.mjs
+"""
+
+
+[tasks.wasm-bindgen-bundler]
+private = true
+command = "wasm-bindgen"
+description = "Generates bindings for a previously built wasm32-unknown-unknown binary for the bundler target"
+args = [
+    "target/wasm32-unknown-unknown/release/getting_started_with_rust_wasm.wasm",
+    "--target",
+    "bundler",
+    "--out-dir",
+    "pkg/",
+]
+
+[tasks.build-bundler]
+description = "Runs all build steps for bundler"
+dependencies = [
+    "add-wasm32-target",
+    "install-wasm-bindgen",
+    "build-wasm",
+    "wasm-bindgen-bundler",
+]
+
+[tasks.run-bundler]
+description = "Runs public/bundler/index.js"
+script = """
+npm run build
+npm run serve
 """
