@@ -1,7 +1,11 @@
 use wasm_bindgen::prelude::*;
 
+#[wasm_bindgen(start)]
+fn main() {
+    console_error_panic_hook::set_once();
+}
+
 #[wasm_bindgen]
 pub fn greeter(name: String) -> Result<String, JsValue> {
-    console_error_panic_hook::set_once();
     Ok(format!("Hello {}!", name))
 }
