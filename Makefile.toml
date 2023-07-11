@@ -78,7 +78,6 @@ dependencies = [
 [tasks.run-bundler]
 description = "Runs src/bundler.js"
 script = """
-npm run build
 npm run serve
 """
 dependencies = ["build-bundler"]
