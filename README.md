@@ -49,10 +49,4 @@ This repository contains code relating to an upcoming blog post
 
 ## Deno
 
-### With `wasm-pack`
-
-- Unsupported
-
-### With `cargo-make`
-
 - `cargo make run-deno` - Runs `src/deno.ts`
