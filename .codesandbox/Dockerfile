@@ -15,8 +15,12 @@ WORKDIR /usr/bin/
 RUN curl -L --output node.tar.xz https://nodejs.org/dist/v18.16.1/node-v18.16.1-linux-x64.tar.xz && \
     tar -xf node.tar.xz && \
     mv node-v18.16.1-linux-x64/bin/node . && \
+    mv node-v18.16.1-linux-x64/bin/npm . && \
     chmod +x node && \
+    chmod +x npm && \
     rm -r node-v18.16.1-linux-x64 && \
     rm node.tar.xz
+
+RUN npm install -g yarn
 
 WORKDIR /root
