@@ -10,6 +10,9 @@ private = true
 description = "Install the Wasm Bindgen CLI"
 install_crate = { crate_name = "wasm-bindgen-cli", binary = "wasm-bindgen", test_arg = "--version" }
 
+[tasks.install-deno]
+install_crate = { crate_name = "deno", binary = "deno", test_arg = "--help", version = "1.35" }
+
 [tasks.add-wasm32-target]
 private = true
 command = "rustup"
@@ -79,3 +82,30 @@ npm run build
 npm run serve
 """
 dependencies = ["build-bundler"]
+
+
+[tasks.wasm-bindgen-deno]
+private = true
+command = "wasm-bindgen"
+description = "Generates bindings for a previously built wasm32-unknown-unknown binary for the bundler deno"
+args = [
+    "target/wasm32-unknown-unknown/release/getting_started_with_rust_wasm.wasm",
+    "--target",
+    "deno",
+    "--out-dir",
+    "pkg/",
+]
+
+[tasks.build-deno]
+description = "Runs all build steps for deno"
+dependencies = [
+    "add-wasm32-target",
+    "install-wasm-bindgen",
+    "build-wasm",
+    "wasm-bindgen-deno",
+]
+
+[tasks.run-deno]
+command = "deno"
+args = ["run", "--allow-read", "src/deno.ts"]
+dependencies = ["build-deno"]

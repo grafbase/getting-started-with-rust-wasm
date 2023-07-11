@@ -7,7 +7,7 @@ This repository contains code relating to an upcoming blog post
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - [Install Node.js](https://nodejs.dev/)
 - [Install `wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
-  - Alternatively, install [`cargo-make`](https://github.com/sagiegurari/cargo-make) - `cargo install cargo-make`
+  - Alternatively or if you plan to use Deno, install [`cargo-make`](https://github.com/sagiegurari/cargo-make) - `cargo install cargo-make`
 
 # Usage
 
@@ -16,11 +16,11 @@ This repository contains code relating to an upcoming blog post
 ### With `wasm-pack`
 
 - `wasm-pack build --target nodejs` - Builds and generates bindings for `src/lib.rs`
-- `node src/node.mjs` - Runs `node.mjs`
+- `node src/node.mjs` - Runs `src/node.mjs`
 
 ### With `cargo-make`
 
-- `cargo make run-node` - Runs `node.mjs`
+- `cargo make run-node` - Runs `src/node.mjs`
 
 ## Webpack
 
@@ -30,4 +30,14 @@ This repository contains code relating to an upcoming blog post
 
 ### With `cargo-make`
 
-- `cargo make run-bundler` - Runs `bundler.js`
+- `cargo make run-bundler` - Runs `src/bundler.js`
+
+## Deno
+
+### With `wasm-pack`
+
+- Unsupported
+
+### With `cargo-make`
+
+- `cargo make run-deno` - Runs `src/deno.ts`
