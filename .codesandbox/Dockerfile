@@ -12,14 +12,7 @@ RUN rustup component add rust-analyzer rustfmt rust-src clippy && \
     cargo binstall -y wasm-pack
 
 WORKDIR /usr/bin/
-RUN curl -L --output node.tar.xz https://nodejs.org/dist/v18.16.1/node-v18.16.1-linux-x64.tar.xz && \
-    tar -xf node.tar.xz && \
-    mv node-v18.16.1-linux-x64/bin/node . && \
-    mv node-v18.16.1-linux-x64/lib/node_modules/npm/bin/npm . && \
-    chmod +x node && \
-    chmod +x npm && \
-    rm -r node-v18.16.1-linux-x64 && \
-    rm node.tar.xz
+RUN sudo apt install node
 
 RUN npm install -g yarn
 
