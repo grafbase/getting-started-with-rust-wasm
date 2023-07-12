@@ -2,6 +2,10 @@
 
 This repository contains code relating to an upcoming blog post
 
+# Live Demo
+
+[getting-started-with-rust-wasm on CodeSandbox](https://codesandbox.io/p/sandbox/github/grafbase/getting-started-with-rust-wasm)
+
 # Setup
 
 ## Webpack
