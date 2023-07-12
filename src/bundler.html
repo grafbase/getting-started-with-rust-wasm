@@ -1,14 +1,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rust to Wasm</title>
     <style>
-      body {
-        display: grid;
-        justify-content: center;
-        align-items: center;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
         font-family: sans-serif;
         background-color: #222226;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
       }
       #root {
         font-size: 78px;
@@ -17,6 +27,8 @@
         background-image: linear-gradient(89.97deg, rgb(25, 160, 95) 0.02%, rgb(13, 127, 140) 123.85%);
         -webkit-background-clip: text;
         background-clip: text;
+        height: 100%;
+        width: 100%;
       }
     </style>
   </head>
