@@ -1,4 +1,9 @@
 {
+  "name": "getting-started-with-rust-wasm",
+  "version": "1.0.0",
+  "description": "Code relating to an upcoming blog post",
+  "author": "Grafbase",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "webpack",
     "serve": "webpack-dev-server"
