@@ -14,8 +14,7 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      templateContent: "<div id='root'></div>",
-      inject: 'body',
+      template: 'src/bundler.html',
     }),
     new WasmPackPlugin({
       crateDirectory: path.resolve(__dirname, '.'),
