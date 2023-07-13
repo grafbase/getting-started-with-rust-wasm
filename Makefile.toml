@@ -53,36 +53,6 @@ node src/node.mjs
 """
 dependencies = ["build-node"]
 
-
-[tasks.wasm-bindgen-bundler]
-private = true
-command = "wasm-bindgen"
-description = "Generates bindings for a previously built wasm32-unknown-unknown binary for the bundler target"
-args = [
-    "target/wasm32-unknown-unknown/release/getting_started_with_rust_wasm.wasm",
-    "--target",
-    "bundler",
-    "--out-dir",
-    "pkg/",
-]
-
-[tasks.build-bundler]
-description = "Runs all build steps for bundler"
-dependencies = [
-    "add-wasm32-target",
-    "install-wasm-bindgen",
-    "build-wasm",
-    "wasm-bindgen-bundler",
-]
-
-[tasks.run-bundler]
-description = "Runs src/bundler.js"
-script = """
-npm run serve
-"""
-dependencies = ["build-bundler"]
-
-
 [tasks.wasm-bindgen-deno]
 private = true
 command = "wasm-bindgen"

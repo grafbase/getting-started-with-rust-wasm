@@ -32,26 +32,20 @@ This repository contains code relating to an upcoming blog post
 
 ## Node.js
 
-### With `wasm-pack`
+### With `wasm-pack`
 
-- `wasm-pack build --target nodejs` - Builds and generates bindings for `src/lib.rs`
-- `node src/node.mjs` - Runs `src/node.mjs`
+1. `wasm-pack build --target nodejs` - Builds and generates bindings for `src/lib.rs`
+2. `node src/node.mjs` - Runs `src/node.mjs`
 
-### With `cargo-make`
+### With `cargo-make`
 
-- `cargo make run-node` - Runs `src/node.mjs`
+- `cargo make run-node` - Runs `src/node.mjs`
 
 ## Webpack
 
-### With `wasm-pack`
-
-- TBD
-
-### With `cargo-make`
-
-- `cargo make run-bundler` - Runs `src/bundler.js`
-- Open http://localhost:8080
+1. `npm run serve`
+2. Open [http://localhost:8080](http://localhost:8080/)
 
 ## Deno
 
-- `cargo make run-deno` - Runs `src/deno.ts`
+- `cargo make run-deno` - Runs `src/deno.ts`
