@@ -48,9 +48,8 @@ dependencies = [
 
 [tasks.run-node]
 description = "Runs src/node.mjs"
-script = """
-node src/node.mjs
-"""
+command = "node"
+args = ["src/node.mjs"]
 dependencies = ["build-node"]
 
 [tasks.wasm-bindgen-deno]
