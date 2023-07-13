@@ -1,4 +1,4 @@
-<h1 align="center"> Getting Started With Rust and WebAssembly</h1>
+<h1 align="center">Getting Started With Rust and WebAssembly</h1>
 
 <p align="center">
   <img width="600" alt="A design with Rust's Ferris and the WebAssembly logo" src=https://github.com/grafbase/getting-started-with-rust-wasm/assets/14347895/384e5505-d68d-466a-a280-5fd95eb52853" /><br /><br />
