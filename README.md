@@ -16,7 +16,6 @@
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - [Install Node.js](https://nodejs.dev/)
 - [Install `wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
-  - Alternatively, install [`cargo-make`](https://github.com/sagiegurari/cargo-make) - `cargo install cargo-make`
 
 ## Node.js
 
