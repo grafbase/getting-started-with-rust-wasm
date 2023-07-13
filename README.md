@@ -14,20 +14,20 @@
 ## Webpack
 
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
-- [Install Node.js](https://nodejs.dev/)
+- [Install Node.js](https://nodejs.org/)
 - [Install `wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
 
 ## Node.js
 
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
-- [Install Node.js](https://nodejs.dev/)
+- [Install Node.js](https://nodejs.org/)
 - [Install `wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
   - Alternatively, [install `cargo-make`](https://github.com/sagiegurari/cargo-make#installation)
 
 ## Deno
 
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
-- [Install Node.js](https://nodejs.dev/)
+- [Install Node.js](https://nodejs.org/)
 - [Install `cargo-make`](https://github.com/sagiegurari/cargo-make#installation)
 
 # Usage
