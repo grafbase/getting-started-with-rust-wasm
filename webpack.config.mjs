@@ -24,6 +24,6 @@ export default {
   mode: 'production',
   devServer: {
     allowedHosts: 'all',
-    watchContentBase: true,
+    liveReload: true,
   },
 };
