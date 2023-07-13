@@ -6,6 +6,6 @@ fn main() {
 }
 
 #[wasm_bindgen]
-pub fn greeter(name: String) -> Result<String, JsError> {
+pub fn greeter(name: &str) -> Result<String, JsError> {
     Ok(format!("Hello {name}!"))
 }
