@@ -7,7 +7,7 @@
 
 # Try It Out
 
-<img alt="CodeSandbox: getting-started-with-rust-wasm" src="https://img.shields.io/badge/CodeSandbox-getting--started--with--rust--wasm-866eff?labelColor=343434&link=https://codesandbox.io/p/sandbox/github/grafbase/getting-started-with-rust-wasm" />
+<a href="https://codesandbox.io/p/sandbox/github/grafbase/getting-started-with-rust-wasm"><img alt="CodeSandbox: getting-started-with-rust-wasm" src="https://img.shields.io/badge/CodeSandbox-getting--started--with--rust--wasm-866eff?labelColor=343434" /></a>
 
 # Setup
 
