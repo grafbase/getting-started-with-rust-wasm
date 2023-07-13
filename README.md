@@ -2,7 +2,7 @@
 
 <p align="center">
   <img width="600" alt="A design with Rust's Ferris and the WebAssembly logo" src=https://github.com/grafbase/getting-started-with-rust-wasm/assets/14347895/384e5505-d68d-466a-a280-5fd95eb52853"></img><br /><br />
-  This repository contains code relating to an upcoming blog post
+  This repository contains code related to an upcoming blog post
 </p>
 
 # Try It Out
