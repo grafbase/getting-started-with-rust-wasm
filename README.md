@@ -2,7 +2,7 @@
 
 <p align="center">
   <img width="600" alt="A design with Rust's Ferris and the WebAssembly logo" src=https://github.com/grafbase/getting-started-with-rust-wasm/assets/14347895/384e5505-d68d-466a-a280-5fd95eb52853" /><br /><br />
-  Rust ➡ WebAssembly for Webpack, Node.js and Deno.<br />See <a href="https://grafbase.com/blog/getting-started-with-rust-and-webassembly">Getting started with Rust and WebAssembly</a>
+  Rust ➡ WebAssembly for Webpack, Node.js and Deno<br />See <a href="https://grafbase.com/blog/getting-started-with-rust-and-webassembly">Getting started with Rust and WebAssembly</a>
 </p>
 
 # Try It Out
