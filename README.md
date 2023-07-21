@@ -45,6 +45,7 @@
    ```
 
 6. Run `direnv allow .` inside the project directory to allow Direnv to execute the `.envrc`
+7. For Webpack, also run `npm install`
 
 # Usage
 
