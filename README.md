@@ -16,6 +16,7 @@
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - [Install Node.js](https://nodejs.org/)
 - [Install `wasm-pack`](https://rustwasm.github.io/wasm-pack/installer/)
+- Run `npm install`
 
 ## Node.js
 
@@ -29,6 +30,21 @@
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - [Install Node.js](https://nodejs.org/)
 - [Install `cargo-make`](https://github.com/sagiegurari/cargo-make#installation)
+
+## With Nix
+
+1. [Install Nix](https://nixos.org/download.html)
+2. [Activate Flakes](https://nixos.wiki/wiki/Flakes)
+3. [Install direnv](https://direnv.net/)
+4. [Install nix-direnv](https://github.com/nix-community/nix-direnv)
+5. Add the following `.envrc` file:
+
+   ```sh
+   use flake  # activates the flake
+   dotenv_if_exists .env  # optionally loads a .env file if it exists
+   ```
+
+6. Run `direnv allow .` inside the project directory to allow Direnv to execute the `.envrc`
 
 # Usage
 

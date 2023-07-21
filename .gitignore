@@ -17,6 +17,9 @@
 .env.production.local
 .env.local
 
+# Direnv
+.envrc
+
 ## Coverage
 coverage
 *.lcov
